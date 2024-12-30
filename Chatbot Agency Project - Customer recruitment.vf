@@ -1,0 +1,1850 @@
+{
+  "version": {
+    "_version": 12,
+    "autoSaveFromRestore": false,
+    "components": [],
+    "creatorID": 1453736,
+    "folders": {},
+    "manualSave": false,
+    "name": "Initial Version",
+    "platformData": {
+      "slots": [
+        {
+          "key": "677290448fe7dd45dcfd6beb",
+          "name": "Nombre",
+          "color": "#DC8879",
+          "inputs": [
+            "Entire user reply,{}"
+          ],
+          "type": {
+            "value": "VF.NAME"
+          }
+        },
+        {
+          "key": "677291c78fe7dd45dcfd6d17",
+          "name": "Email",
+          "color": "#CB627B",
+          "inputs": [],
+          "type": {
+            "value": "VF.EMAIL"
+          }
+        }
+      ],
+      "intents": [
+        {
+          "key": "None",
+          "name": "None",
+          "slots": [],
+          "inputs": [],
+          "noteID": null
+        }
+      ],
+      "settings": {
+        "restart": true,
+        "repeat": 100,
+        "locales": [
+          "es-ES"
+        ],
+        "defaultVoice": "Conchita"
+      },
+      "publishing": {},
+      "platform": "webchat"
+    },
+    "prototype": {
+      "data": {
+        "name": "Captación clientes",
+        "locales": [
+          "es-ES"
+        ]
+      },
+      "model": {
+        "intents": [
+          {
+            "key": "capture_Email_ipklgfpm",
+            "name": "capture_Email_ipklgfpm",
+            "slots": [
+              {
+                "id": "677291c78fe7dd45dcfd6d17",
+                "required": true,
+                "dialog": {
+                  "confirm": [],
+                  "prompt": [],
+                  "utterances": [
+                    {
+                      "text": "{{[Email].677291c78fe7dd45dcfd6d17}}",
+                      "slots": [
+                        "677291c78fe7dd45dcfd6d17"
+                      ]
+                    }
+                  ],
+                  "confirmEnabled": false
+                }
+              }
+            ],
+            "inputs": []
+          },
+          {
+            "key": "None",
+            "name": "None",
+            "slots": [],
+            "inputs": [
+              {
+                "text": "None"
+              }
+            ],
+            "noteID": null
+          }
+        ],
+        "slots": [
+          {
+            "key": "677290448fe7dd45dcfd6beb",
+            "name": "Nombre",
+            "color": "#DC8879",
+            "inputs": [
+              "Entire user reply,{}"
+            ],
+            "type": {
+              "value": "VF.NAME"
+            },
+            "description": null
+          },
+          {
+            "key": "677291c78fe7dd45dcfd6d17",
+            "name": "Email",
+            "color": "#CB627B",
+            "inputs": [],
+            "type": {
+              "value": "VF.EMAIL"
+            },
+            "description": null
+          }
+        ]
+      },
+      "context": {
+        "stack": [
+          {
+            "programID": "63067e968cbdb692c97b063a",
+            "storage": {},
+            "variables": {},
+            "diagramID": "63067e968cbdb692c97b063a"
+          }
+        ],
+        "variables": {}
+      },
+      "surveyorContext": {
+        "nonDraftResponsesMap": {},
+        "responseMessagesByDiscriminatorIDMap": {},
+        "responseDiscriminatorsByResponseIDMap": {},
+        "functionDefinitions": {},
+        "referencedResponseIDs": [
+          "67727f478fe7dd45dcfd5a46",
+          "677283a08fe7dd45dcfd5e5e",
+          "677291528fe7dd45dcfd6cc0",
+          "677291f68fe7dd45dcfd6d53",
+          "677292d38fe7dd45dcfd6da7"
+        ],
+        "slotsMap": {
+          "677290448fe7dd45dcfd6beb": {
+            "key": "677290448fe7dd45dcfd6beb",
+            "name": "Nombre",
+            "color": "#DC8879",
+            "inputs": [
+              "Entire user reply,{}"
+            ],
+            "type": {
+              "value": "VF.NAME"
+            }
+          },
+          "677291c78fe7dd45dcfd6d17": {
+            "key": "677291c78fe7dd45dcfd6d17",
+            "name": "Email",
+            "color": "#CB627B",
+            "inputs": [],
+            "type": {
+              "value": "VF.EMAIL"
+            }
+          }
+        },
+        "platform": "webchat",
+        "products": {},
+        "extraSlots": [],
+        "interfaces": [],
+        "permissions": [],
+        "projectType": "chat",
+        "extraIntents": [
+          {
+            "key": "capture_Email_ipklgfpm",
+            "name": "capture_Email_ipklgfpm",
+            "slots": [
+              {
+                "id": "677291c78fe7dd45dcfd6d17",
+                "required": true,
+                "dialog": {
+                  "confirm": [],
+                  "prompt": [],
+                  "utterances": [
+                    {
+                      "text": "{{[Email].677291c78fe7dd45dcfd6d17}}",
+                      "slots": [
+                        "677291c78fe7dd45dcfd6d17"
+                      ]
+                    }
+                  ],
+                  "confirmEnabled": false
+                }
+              }
+            ],
+            "inputs": []
+          }
+        ],
+        "usedEventsSet": [],
+        "usedIntentsSet": [
+          "capture_Email_ipklgfpm"
+        ],
+        "goToIntentsSet": [],
+        "cmsVariables": {
+          "sessions": {
+            "isSystem": true,
+            "defaultValue": null
+          },
+          "user_id": {
+            "isSystem": true,
+            "defaultValue": null
+          },
+          "timestamp": {
+            "isSystem": true,
+            "defaultValue": null
+          },
+          "platform": {
+            "isSystem": true,
+            "defaultValue": null
+          },
+          "locale": {
+            "isSystem": true,
+            "defaultValue": null
+          },
+          "intent_confidence": {
+            "isSystem": true,
+            "defaultValue": null
+          },
+          "last_response": {
+            "isSystem": true,
+            "defaultValue": null
+          },
+          "last_event": {
+            "isSystem": true,
+            "defaultValue": null
+          },
+          "last_utterance": {
+            "isSystem": true,
+            "defaultValue": null
+          },
+          "vf_memory": {
+            "isSystem": true,
+            "defaultValue": null
+          },
+          "Servicios": {
+            "isSystem": false,
+            "defaultValue": null,
+            "datatype": "any",
+            "isArray": false
+          },
+          "name": {
+            "isSystem": false,
+            "defaultValue": null,
+            "datatype": "any",
+            "isArray": false
+          }
+        },
+        "entitiesMap": {},
+        "variableMap": {},
+        "intentsMap": {},
+        "requiredEntitiesMap": {},
+        "eventsMap": {}
+      },
+      "settings": {
+        "hasBranding": false
+      },
+      "platform": "webchat",
+      "type": "chat"
+    },
+    "topics": [
+      {
+        "type": "DIAGRAM",
+        "sourceID": "63067e968cbdb692c97b063a"
+      }
+    ],
+    "variables": [
+      "sessions",
+      "user_id",
+      "timestamp",
+      "platform",
+      "locale",
+      "intent_confidence",
+      "last_response",
+      "last_event",
+      "last_utterance",
+      "vf_memory",
+      "Servicios",
+      "name"
+    ],
+    "programResources": {
+      "messages": {
+        "67727f478fe7dd45dcfd5a46": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "¡Bienvenido! Para ayudarte mejor , ¿en qué estas interesado/a?"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              },
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "¡Hola! ¿En qué puedo ayudarte?"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              },
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "¡Bienvenido/a! ¿En qué puedo asistirte?"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              },
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "¡Hola! ¿En qué estás interesado/a?"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "677283a08fe7dd45dcfd5e5e": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "¡Muchas gracias por tu interés en "
+                        },
+                        {
+                          "text": "{Servicios}"
+                        },
+                        {
+                          "text": "!"
+                        }
+                      ]
+                    },
+                    {
+                      "children": [
+                        {
+                          "text": "Antes de poder darte la información necesito saber tu nombre"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "677291528fe7dd45dcfd6cc0": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "¡Genial! ¿Cuál es tu email?"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "677291f68fe7dd45dcfd6d53": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "¡Genial! Entonces tu nombre es "
+                        },
+                        {
+                          "text": "{Nombre}"
+                        },
+                        {
+                          "text": " y tu email es "
+                        },
+                        {
+                          "text": "{Email}"
+                        },
+                        {
+                          "text": " "
+                        }
+                      ]
+                    },
+                    {
+                      "children": [
+                        {
+                          "text": "¿verdad?"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "677292d38fe7dd45dcfd6da7": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "¡Gracias! Un asesor se pondrá en contacto contigo lo antes posible al email que has indicado."
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        }
+      },
+      "prompts": {}
+    },
+    "_id": "67727e2f8fe7dd45dcfd596e",
+    "updatedAt": "2024-12-30T12:46:26.614Z",
+    "publishedAt": "2024-12-30T11:04:15.496Z",
+    "domains": [
+      {
+        "id": "cm5axme0v0ond07ot4yqkg6wv",
+        "name": "Home",
+        "live": true,
+        "topicIDs": [
+          "63067e968cbdb692c97b063a"
+        ],
+        "rootDiagramID": "63067e968cbdb692c97b063a",
+        "updatedAt": "2024-12-30T11:04:15.542Z"
+      }
+    ],
+    "projectID": "67727e2f8fe7dd45dcfd596d",
+    "rootDiagramID": "63067e968cbdb692c97b063a"
+  },
+  "diagrams": {
+    "63067e968cbdb692c97b063a": {
+      "name": "ROOT",
+      "type": "TOPIC",
+      "zoom": 100,
+      "nodes": {
+        "start00000000000000000000": {
+          "type": "start",
+          "data": {
+            "name": "Start",
+            "color": "#56b365",
+            "steps": [],
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "67727f4327738a63adbb585a",
+                  "id": "6032afcf359e8c14c06c0319",
+                  "data": {}
+                }
+              },
+              "dynamic": []
+            },
+            "label": "Start"
+          },
+          "nodeID": "start00000000000000000000",
+          "coords": [
+            402.26138293106055,
+            75.19392824442801
+          ]
+        },
+        "67727f4327738a63adbb5858": {
+          "type": "message",
+          "data": {
+            "name": "",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "67727f4327738a63adbb5859"
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            },
+            "messageID": "67727f478fe7dd45dcfd5a46"
+          },
+          "nodeID": "67727f4327738a63adbb5858",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "67727f4327738a63adbb585a": {
+          "type": "block",
+          "data": {
+            "name": "New Block 1",
+            "steps": [
+              "67727f4327738a63adbb5858",
+              "67727fd627738a63adbb5861"
+            ],
+            "color": ""
+          },
+          "nodeID": "67727f4327738a63adbb585a",
+          "coords": [
+            699.3017678452849,
+            1.5551425955424065
+          ]
+        },
+        "67727fd627738a63adbb5861": {
+          "type": "buttons-v2",
+          "data": {
+            "name": "Buttons",
+            "items": [
+              {
+                "id": "cm5ay04j700fv357dpu09x820",
+                "label": [
+                  {
+                    "text": [
+                      "Redes Sociales"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "cm5ay0ixp00gr357d9f7u98v0",
+                "label": [
+                  {
+                    "text": [
+                      "Automatización"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "listenForOtherTriggers": true,
+            "portsV2": {
+              "byKey": {
+                "cm5ay04j700fv357dpu09x820": {
+                  "id": "677280b027738a63adbb5878",
+                  "target": "677286a827738a63adbb58cf",
+                  "type": "",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          865.97,
+                          196.14
+                        ]
+                      },
+                      {
+                        "point": [
+                          916.14,
+                          196.14
+                        ]
+                      },
+                      {
+                        "point": [
+                          916.14,
+                          69.31
+                        ]
+                      },
+                      {
+                        "point": [
+                          966.3,
+                          69.31
+                        ],
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                },
+                "cm5ay0ixp00gr357d9f7u98v0": {
+                  "id": "677280c327738a63adbb587a",
+                  "target": "677286fc27738a63adbb58d8",
+                  "type": "",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          865.97,
+                          250.39
+                        ]
+                      },
+                      {
+                        "point": [
+                          914.26,
+                          250.39
+                        ]
+                      },
+                      {
+                        "point": [
+                          914.26,
+                          278.06
+                        ]
+                      },
+                      {
+                        "point": [
+                          962.55,
+                          278.06
+                        ],
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "67727fd627738a63adbb5861",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "6772838927738a63adbb58b6": {
+          "type": "message",
+          "data": {
+            "name": "",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": "67728ff027738a63adbb58fa",
+                  "id": "6772838927738a63adbb58b7",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          1771.72,
+                          214.89
+                        ]
+                      },
+                      {
+                        "point": [
+                          1798.68,
+                          214.89
+                        ]
+                      },
+                      {
+                        "point": [
+                          1798.68,
+                          467.03
+                        ]
+                      },
+                      {
+                        "point": [
+                          1774.68,
+                          467.03
+                        ],
+                        "reversed": true,
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            },
+            "messageID": "677283a08fe7dd45dcfd5e5e"
+          },
+          "nodeID": "6772838927738a63adbb58b6"
+        },
+        "6772838927738a63adbb58b8": {
+          "type": "block",
+          "data": {
+            "name": "New Block 2",
+            "steps": [
+              "6772838927738a63adbb58b6"
+            ],
+            "color": ""
+          },
+          "nodeID": "6772838927738a63adbb58b8",
+          "coords": [
+            1605.0517678452848,
+            97.55514259554238
+          ]
+        },
+        "677286a827738a63adbb58cd": {
+          "type": "set-v3",
+          "data": {
+            "name": "",
+            "items": [
+              {
+                "id": "cm5ayx54i01hc357dwecuufgn",
+                "type": "script",
+                "label": null,
+                "value": [
+                  "\"Redes Sociales\""
+                ],
+                "variableID": "677281468fe7dd45dcfd5bd9"
+              }
+            ],
+            "label": "",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": "6772838927738a63adbb58b8",
+                  "id": "677286a827738a63adbb58ce",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          1297.3,
+                          130.31
+                        ]
+                      },
+                      {
+                        "point": [
+                          1440.05,
+                          124.56
+                        ]
+                      }
+                    ]
+                  }
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "677286a827738a63adbb58cd"
+        },
+        "677286a827738a63adbb58cf": {
+          "type": "block",
+          "data": {
+            "name": "New Block 1.1",
+            "steps": [
+              "677286a827738a63adbb58cd"
+            ],
+            "color": ""
+          },
+          "nodeID": "677286a827738a63adbb58cf",
+          "coords": [
+            1131.3017578125,
+            42.30523681640625
+          ]
+        },
+        "677286fc27738a63adbb58d6": {
+          "type": "set-v3",
+          "data": {
+            "name": "",
+            "items": [
+              {
+                "id": "cm5ayzb6a01jx357dixh4ll0t",
+                "type": "script",
+                "label": null,
+                "value": [
+                  "\"Automatización\""
+                ],
+                "variableID": "677281468fe7dd45dcfd5bd9"
+              }
+            ],
+            "label": "",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": "6772838927738a63adbb58b8",
+                  "id": "677286fc27738a63adbb58d7",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          1293.55,
+                          339.06
+                        ]
+                      },
+                      {
+                        "point": [
+                          1366.8,
+                          339.06
+                        ]
+                      },
+                      {
+                        "point": [
+                          1366.8,
+                          124.56
+                        ]
+                      },
+                      {
+                        "point": [
+                          1440.05,
+                          124.56
+                        ],
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "677286fc27738a63adbb58d6"
+        },
+        "677286fc27738a63adbb58d8": {
+          "type": "block",
+          "data": {
+            "name": "New Block 1.2",
+            "steps": [
+              "677286fc27738a63adbb58d6"
+            ],
+            "color": ""
+          },
+          "nodeID": "677286fc27738a63adbb58d8",
+          "coords": [
+            1127.5517578125,
+            251.05523681640625
+          ]
+        },
+        "67728ff027738a63adbb58fa": {
+          "type": "capture-v3",
+          "data": {
+            "name": "Capture",
+            "capture": {
+              "type": "user-reply",
+              "variableID": "6772961c8fe7dd45dcfd6fe9"
+            },
+            "listenForOtherTriggers": false,
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": "6772913027738a63adbb5909",
+                  "id": "67728ff027738a63adbb58fb",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          1774.68,
+                          467.28
+                        ]
+                      },
+                      {
+                        "point": [
+                          1859.95,
+                          467.28
+                        ]
+                      },
+                      {
+                        "point": [
+                          1859.95,
+                          343.01
+                        ]
+                      },
+                      {
+                        "point": [
+                          1945.23,
+                          343.01
+                        ],
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "67728ff027738a63adbb58fa",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "67728ff027738a63adbb58fc": {
+          "type": "block",
+          "data": {
+            "name": "New Block 3",
+            "steps": [
+              "67728ff027738a63adbb58fa"
+            ],
+            "color": ""
+          },
+          "nodeID": "67728ff027738a63adbb58fc",
+          "coords": [
+            1608.0113829310603,
+            388.693928244428
+          ]
+        },
+        "6772913027738a63adbb5907": {
+          "type": "message",
+          "data": {
+            "name": "",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": "677291a827738a63adbb5911",
+                  "id": "6772913027738a63adbb5908",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          2276.9,
+                          394.35
+                        ]
+                      },
+                      {
+                        "point": [
+                          2423.4,
+                          394.35
+                        ]
+                      },
+                      {
+                        "point": [
+                          2423.4,
+                          541.08
+                        ]
+                      },
+                      {
+                        "point": [
+                          2399.4,
+                          541.08
+                        ],
+                        "reversed": true,
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            },
+            "messageID": "677291528fe7dd45dcfd6cc0"
+          },
+          "nodeID": "6772913027738a63adbb5907"
+        },
+        "6772913027738a63adbb5909": {
+          "type": "block",
+          "data": {
+            "name": "New Block 4",
+            "steps": [
+              "6772913027738a63adbb5907"
+            ],
+            "color": ""
+          },
+          "nodeID": "6772913027738a63adbb5909",
+          "coords": [
+            2110.229284882304,
+            316.0124899900907
+          ]
+        },
+        "677291a827738a63adbb5911": {
+          "type": "capture-v3",
+          "data": {
+            "name": "Capture",
+            "capture": {
+              "type": "entity",
+              "items": [
+                {
+                  "id": "cm5b0lw0b03o8357dvh3jiw3x",
+                  "entityID": "677291c78fe7dd45dcfd6d17"
+                }
+              ],
+              "automaticReprompt": {
+                "params": null
+              },
+              "rules": [
+                {
+                  "id": "cm5b0l8q903nu357d5w17qclq",
+                  "text": ""
+                }
+              ]
+            },
+            "listenForOtherTriggers": true,
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": "677291d227738a63adbb591d",
+                  "id": "677291a827738a63adbb5912",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          2399.4,
+                          541.33
+                        ]
+                      },
+                      {
+                        "point": [
+                          2477.82,
+                          541.33
+                        ]
+                      },
+                      {
+                        "point": [
+                          2477.82,
+                          340.08
+                        ]
+                      },
+                      {
+                        "point": [
+                          2556.25,
+                          340.08
+                        ],
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "677291a827738a63adbb5911",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "677291a827738a63adbb5913": {
+          "type": "block",
+          "data": {
+            "name": "New Block 5",
+            "steps": [
+              "677291a827738a63adbb5911"
+            ],
+            "color": ""
+          },
+          "nodeID": "677291a827738a63adbb5913",
+          "coords": [
+            2232.729284882304,
+            462.7427021748312
+          ]
+        },
+        "677291d227738a63adbb591b": {
+          "type": "message",
+          "data": {
+            "name": "",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "677291d227738a63adbb591c"
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            },
+            "messageID": "677291f68fe7dd45dcfd6d53"
+          },
+          "nodeID": "677291d227738a63adbb591b"
+        },
+        "677291d227738a63adbb591d": {
+          "type": "block",
+          "data": {
+            "name": "New Block 6",
+            "steps": [
+              "677291d227738a63adbb591b",
+              "6772924427738a63adbb5924"
+            ],
+            "color": ""
+          },
+          "nodeID": "677291d227738a63adbb591d",
+          "coords": [
+            2721.2449098823035,
+            313.0776891926354
+          ]
+        },
+        "6772924427738a63adbb5924": {
+          "type": "buttons-v2",
+          "data": {
+            "name": "Buttons",
+            "items": [
+              {
+                "id": "cm5b0p12303to357dm01hrks9",
+                "label": [
+                  {
+                    "text": [
+                      "Sí, es correcta la información"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "cm5b0ph0c03ue357dlqldltvi",
+                "label": [
+                  {
+                    "text": [
+                      "No,me he equivocado"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "listenForOtherTriggers": true,
+            "portsV2": {
+              "byKey": {
+                "cm5b0p12303to357dm01hrks9": {
+                  "id": "6772925927738a63adbb592c",
+                  "target": "677292d127738a63adbb5931",
+                  "type": "",
+                  "data": {}
+                },
+                "cm5b0ph0c03ue357dlqldltvi": {
+                  "id": "6772926e27738a63adbb592e",
+                  "target": "6772838927738a63adbb58b8",
+                  "type": "",
+                  "data": {}
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "6772924427738a63adbb5924"
+        },
+        "677292d127738a63adbb5931": {
+          "type": "message",
+          "data": {
+            "name": "",
+            "messageID": "677292d38fe7dd45dcfd6da7",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": "6772932b27738a63adbb593a",
+                  "id": "677292d127738a63adbb5932",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          3475.41,
+                          297.6
+                        ]
+                      },
+                      {
+                        "point": [
+                          3587.96,
+                          300.63
+                        ]
+                      }
+                    ]
+                  }
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "677292d127738a63adbb5931"
+        },
+        "677292d127738a63adbb5933": {
+          "type": "block",
+          "data": {
+            "name": "New Block 7",
+            "steps": [
+              "677292d127738a63adbb5931"
+            ],
+            "color": ""
+          },
+          "nodeID": "677292d127738a63adbb5933",
+          "coords": [
+            3308.7449098823035,
+            200.26518919263538
+          ]
+        },
+        "6772932b27738a63adbb593a": {
+          "type": "exit",
+          "data": {
+            "name": "",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "6772932b27738a63adbb593a"
+        },
+        "6772932b27738a63adbb593b": {
+          "type": "block",
+          "data": {
+            "name": "New Block 8",
+            "steps": [
+              "6772932b27738a63adbb593a"
+            ],
+            "color": ""
+          },
+          "nodeID": "6772932b27738a63adbb593b",
+          "coords": [
+            3754.6301008460487,
+            222.29470546107342
+          ]
+        }
+      },
+      "offsetX": 238.19089365515157,
+      "offsetY": 239.8448574044576,
+      "modified": 1661370006,
+      "children": [],
+      "creatorID": 1453736,
+      "variables": [],
+      "intentStepIDs": [],
+      "menuNodeIDs": [],
+      "menuItems": [
+        {
+          "type": "NODE",
+          "sourceID": "start00000000000000000000"
+        }
+      ],
+      "_id": "67727e2f8fe7dd45dcfd5971",
+      "diagramID": "63067e968cbdb692c97b063a",
+      "versionID": "67727e2f8fe7dd45dcfd596e"
+    }
+  },
+  "flows": [],
+  "entities": [
+    {
+      "id": "677290448fe7dd45dcfd6beb",
+      "name": "Nombre",
+      "createdByID": 1453736,
+      "folderID": null,
+      "description": null,
+      "color": "#DC8879",
+      "classifier": "VF.NAME",
+      "isArray": false,
+      "createdAt": "2024-12-30T12:21:25.000Z",
+      "updatedAt": "2024-12-30T12:21:25.000Z",
+      "updatedByID": 1453736
+    },
+    {
+      "id": "677291c78fe7dd45dcfd6d17",
+      "name": "Email",
+      "createdByID": 1453736,
+      "folderID": null,
+      "description": null,
+      "color": "#CB627B",
+      "classifier": "VF.EMAIL",
+      "isArray": false,
+      "createdAt": "2024-12-30T12:27:52.000Z",
+      "updatedAt": "2024-12-30T12:27:52.000Z",
+      "updatedByID": 1453736
+    }
+  ],
+  "entityVariants": [
+    {
+      "id": "677290f08fe7dd45dcfd6c5d",
+      "language": "en-us",
+      "value": "Entire user reply",
+      "synonyms": [
+        "{}"
+      ],
+      "entityID": "677290448fe7dd45dcfd6beb",
+      "createdAt": "2024-12-30T12:24:17.000Z"
+    }
+  ],
+  "intents": [
+    {
+      "id": "None",
+      "name": "None",
+      "createdByID": 1453736,
+      "folderID": null,
+      "description": null,
+      "automaticReprompt": false,
+      "entityOrder": [],
+      "automaticRepromptSettings": null,
+      "createdAt": "2024-12-30T11:04:16.000Z",
+      "updatedAt": "2024-12-30T11:04:16.000Z",
+      "updatedByID": 1453736
+    }
+  ],
+  "utterances": [],
+  "requiredEntities": [],
+  "folders": [],
+  "responses": [
+    {
+      "id": "67727e2f020cf30007b22d6f",
+      "name": "",
+      "createdByID": 1453736,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2024-12-30T11:04:16.000Z",
+      "updatedAt": "2024-12-30T11:04:16.000Z",
+      "updatedByID": 1453736
+    },
+    {
+      "id": "67727f478fe7dd45dcfd5a46",
+      "name": "",
+      "createdByID": 1453736,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2024-12-30T11:08:56.000Z",
+      "updatedAt": "2024-12-30T11:09:09.000Z",
+      "updatedByID": 1453736
+    },
+    {
+      "id": "677283a08fe7dd45dcfd5e5e",
+      "name": "",
+      "createdByID": 1453736,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2024-12-30T11:27:28.000Z",
+      "updatedAt": "2024-12-30T11:27:32.000Z",
+      "updatedByID": 1453736
+    },
+    {
+      "id": "677291528fe7dd45dcfd6cc0",
+      "name": "",
+      "createdByID": 1453736,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2024-12-30T12:25:54.000Z",
+      "updatedAt": "2024-12-30T12:26:05.000Z",
+      "updatedByID": 1453736
+    },
+    {
+      "id": "677291f68fe7dd45dcfd6d53",
+      "name": "",
+      "createdByID": 1453736,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2024-12-30T12:28:39.000Z",
+      "updatedAt": "2024-12-30T12:28:54.000Z",
+      "updatedByID": 1453736
+    },
+    {
+      "id": "677292d38fe7dd45dcfd6da7",
+      "name": "",
+      "createdByID": 1453736,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2024-12-30T12:32:19.000Z",
+      "updatedAt": "2024-12-30T12:32:28.000Z",
+      "updatedByID": 1453736
+    }
+  ],
+  "responseMessages": [
+    {
+      "id": "67727e2f020cf30007b22d71",
+      "discriminatorID": "67727e2f020cf30007b22d70",
+      "text": [
+        {
+          "text": [
+            "This is the first message in your assistant."
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2024-12-30T11:04:16.000Z"
+    },
+    {
+      "id": "67727f478fe7dd45dcfd5a48",
+      "discriminatorID": "67727f478fe7dd45dcfd5a47",
+      "text": [
+        {
+          "text": [
+            "¡Bienvenido! Para ayudarte mejor , ¿en qué estas interesado/a?"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2024-12-30T11:08:56.000Z"
+    },
+    {
+      "id": "677291528fe7dd45dcfd6cc2",
+      "discriminatorID": "677291528fe7dd45dcfd6cc1",
+      "text": [
+        {
+          "text": [
+            "¡Genial! ¿Cuál es tu email?"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2024-12-30T12:25:54.000Z"
+    },
+    {
+      "id": "677291f68fe7dd45dcfd6d55",
+      "discriminatorID": "677291f68fe7dd45dcfd6d54",
+      "text": [
+        {
+          "text": [
+            "¡Genial! Entonces tu nombre es ",
+            {
+              "entityID": "677290448fe7dd45dcfd6beb"
+            },
+            " y tu email es ",
+            {
+              "entityID": "677291c78fe7dd45dcfd6d17"
+            },
+            " "
+          ]
+        },
+        {
+          "text": [
+            "¿verdad?"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2024-12-30T12:28:39.000Z"
+    },
+    {
+      "id": "677292d38fe7dd45dcfd6da9",
+      "discriminatorID": "677292d38fe7dd45dcfd6da8",
+      "text": [
+        {
+          "text": [
+            "¡Gracias! Un asesor se pondrá en contacto contigo lo antes posible al email que has indicado."
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2024-12-30T12:32:19.000Z"
+    },
+    {
+      "id": "67727f918fe7dd45dcfd5a5a",
+      "discriminatorID": "67727f478fe7dd45dcfd5a47",
+      "text": [
+        {
+          "text": [
+            "¡Hola! ¿En qué puedo ayudarte?"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2024-12-30T11:10:09.000Z"
+    },
+    {
+      "id": "67727f918fe7dd45dcfd5a5b",
+      "discriminatorID": "67727f478fe7dd45dcfd5a47",
+      "text": [
+        {
+          "text": [
+            "¡Bienvenido/a! ¿En qué puedo asistirte?"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2024-12-30T11:10:09.000Z"
+    },
+    {
+      "id": "67727f918fe7dd45dcfd5a5c",
+      "discriminatorID": "67727f478fe7dd45dcfd5a47",
+      "text": [
+        {
+          "text": [
+            "¡Hola! ¿En qué estás interesado/a?"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2024-12-30T11:10:09.000Z"
+    },
+    {
+      "id": "677283a08fe7dd45dcfd5e60",
+      "discriminatorID": "677283a08fe7dd45dcfd5e5f",
+      "text": [
+        {
+          "text": [
+            "¡Muchas gracias por tu interés en ",
+            {
+              "variableID": "677281468fe7dd45dcfd5bd9"
+            },
+            "!"
+          ]
+        },
+        {
+          "text": [
+            "Antes de poder darte la información necesito saber tu nombre"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2024-12-30T11:27:28.000Z"
+    }
+  ],
+  "responseDiscriminators": [
+    {
+      "id": "67727e2f020cf30007b22d70",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "67727e2f020cf30007b22d6f",
+      "variantOrder": [
+        "67727e2f020cf30007b22d71"
+      ],
+      "createdAt": "2024-12-30T11:04:16.000Z"
+    },
+    {
+      "id": "67727f478fe7dd45dcfd5a47",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "67727f478fe7dd45dcfd5a46",
+      "variantOrder": [
+        "67727f478fe7dd45dcfd5a48",
+        "67727f918fe7dd45dcfd5a5a",
+        "67727f918fe7dd45dcfd5a5b",
+        "67727f918fe7dd45dcfd5a5c"
+      ],
+      "createdAt": "2024-12-30T11:08:56.000Z"
+    },
+    {
+      "id": "677283a08fe7dd45dcfd5e5f",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "677283a08fe7dd45dcfd5e5e",
+      "variantOrder": [
+        "677283a08fe7dd45dcfd5e60"
+      ],
+      "createdAt": "2024-12-30T11:27:28.000Z"
+    },
+    {
+      "id": "677291528fe7dd45dcfd6cc1",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "677291528fe7dd45dcfd6cc0",
+      "variantOrder": [
+        "677291528fe7dd45dcfd6cc2"
+      ],
+      "createdAt": "2024-12-30T12:25:54.000Z"
+    },
+    {
+      "id": "677291f68fe7dd45dcfd6d54",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "677291f68fe7dd45dcfd6d53",
+      "variantOrder": [
+        "677291f68fe7dd45dcfd6d55"
+      ],
+      "createdAt": "2024-12-30T12:28:39.000Z"
+    },
+    {
+      "id": "677292d38fe7dd45dcfd6da8",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "677292d38fe7dd45dcfd6da7",
+      "variantOrder": [
+        "677292d38fe7dd45dcfd6da9"
+      ],
+      "createdAt": "2024-12-30T12:32:19.000Z"
+    }
+  ],
+  "variables": [
+    {
+      "id": "sessions",
+      "name": "sessions",
+      "createdByID": 1453736,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "number",
+      "description": "The number of times a particular user has opened the app.",
+      "defaultValue": null,
+      "createdAt": "2024-12-30T11:04:16.000Z",
+      "updatedAt": "2024-12-30T11:04:16.000Z",
+      "updatedByID": 1453736
+    },
+    {
+      "id": "user_id",
+      "name": "user_id",
+      "createdByID": 1453736,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The user's unique ID.",
+      "defaultValue": null,
+      "createdAt": "2024-12-30T11:04:16.000Z",
+      "updatedAt": "2024-12-30T11:04:16.000Z",
+      "updatedByID": 1453736
+    },
+    {
+      "id": "timestamp",
+      "name": "timestamp",
+      "createdByID": 1453736,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "UNIX timestamp (number of seconds since January 1st, 1970 at UTC).",
+      "defaultValue": null,
+      "createdAt": "2024-12-30T11:04:16.000Z",
+      "updatedAt": "2024-12-30T11:04:16.000Z",
+      "updatedByID": 1453736
+    },
+    {
+      "id": "platform",
+      "name": "platform",
+      "createdByID": 1453736,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The platform your agent is running on (e.g. \"voiceflow\").",
+      "defaultValue": null,
+      "createdAt": "2024-12-30T11:04:16.000Z",
+      "updatedAt": "2024-12-30T11:04:16.000Z",
+      "updatedByID": 1453736
+    },
+    {
+      "id": "locale",
+      "name": "locale",
+      "createdByID": 1453736,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The locale of the user (eg. en-US, en-CA, it-IT, fr-FR, ...).",
+      "defaultValue": null,
+      "createdAt": "2024-12-30T11:04:16.000Z",
+      "updatedAt": "2024-12-30T11:04:16.000Z",
+      "updatedByID": 1453736
+    },
+    {
+      "id": "intent_confidence",
+      "name": "intent_confidence",
+      "createdByID": 1453736,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "number",
+      "description": "The confidence interval (measured as a value from 0 to 100) for the most recently matched intent.",
+      "defaultValue": null,
+      "createdAt": "2024-12-30T11:04:16.000Z",
+      "updatedAt": "2024-12-30T11:04:16.000Z",
+      "updatedByID": 1453736
+    },
+    {
+      "id": "last_response",
+      "name": "last_response",
+      "createdByID": 1453736,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The agent's last response (text/speak) in a string.",
+      "defaultValue": null,
+      "createdAt": "2024-12-30T11:04:16.000Z",
+      "updatedAt": "2024-12-30T11:04:16.000Z",
+      "updatedByID": 1453736
+    },
+    {
+      "id": "last_event",
+      "name": "last_event",
+      "createdByID": 1453736,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "any",
+      "description": "The object containing the last event that the user client has triggered.",
+      "defaultValue": null,
+      "createdAt": "2024-12-30T11:04:16.000Z",
+      "updatedAt": "2024-12-30T11:04:16.000Z",
+      "updatedByID": 1453736
+    },
+    {
+      "id": "last_utterance",
+      "name": "last_utterance",
+      "createdByID": 1453736,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The user's last utterance in a text string.",
+      "defaultValue": null,
+      "createdAt": "2024-12-30T11:04:16.000Z",
+      "updatedAt": "2024-12-30T11:04:16.000Z",
+      "updatedByID": 1453736
+    },
+    {
+      "id": "vf_memory",
+      "name": "vf_memory",
+      "createdByID": 1453736,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "Last 10 user inputs and agent responses in a string (e.g. \"agent: How can i help?\"\nuser: What's the weather today?).",
+      "defaultValue": null,
+      "createdAt": "2024-12-30T11:04:16.000Z",
+      "updatedAt": "2024-12-30T11:04:16.000Z",
+      "updatedByID": 1453736
+    },
+    {
+      "id": "677281468fe7dd45dcfd5bd9",
+      "name": "Servicios",
+      "createdByID": 1453736,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "",
+      "defaultValue": null,
+      "createdAt": "2024-12-30T11:17:26.000Z",
+      "updatedAt": "2024-12-30T11:17:26.000Z",
+      "updatedByID": 1453736
+    },
+    {
+      "id": "6772961c8fe7dd45dcfd6fe9",
+      "name": "name",
+      "createdByID": 1453736,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "",
+      "defaultValue": null,
+      "createdAt": "2024-12-30T12:46:20.000Z",
+      "updatedAt": "2024-12-30T12:46:20.000Z",
+      "updatedByID": 1453736
+    }
+  ],
+  "workflows": [
+    {
+      "id": "67727e2f020cf30007b22d6e",
+      "name": "Chatbot Agency Project - Customer recruitment",
+      "createdByID": 1453736,
+      "folderID": null,
+      "status": null,
+      "isStart": true,
+      "diagramID": "63067e968cbdb692c97b063a",
+      "assigneeID": null,
+      "description": null,
+      "createdAt": "2024-12-30T11:04:16.000Z",
+      "updatedAt": "2024-12-30T13:38:33.000Z",
+      "updatedByID": 1453736
+    }
+  ],
+  "attachments": [],
+  "cardButtons": [],
+  "prompts": [],
+  "promptMessages": [],
+  "events": [],
+  "functions": [],
+  "functionPaths": [],
+  "functionVariables": [],
+  "project": {
+    "type": "chat",
+    "name": "Captación clientes",
+    "image": "",
+    "teamID": "LVkmPl3BE2",
+    "members": [],
+    "platform": "webchat",
+    "_version": 1.2,
+    "linkType": "STRAIGHT",
+    "creatorID": 1453736,
+    "platformData": {
+      "invocationName": "template project general"
+    },
+    "customThemes": [],
+    "privacy": "private",
+    "updatedBy": 1453736,
+    "apiPrivacy": "private",
+    "aiAssistSettings": {
+      "aiPlayground": true
+    },
+    "_id": "67727e2f8fe7dd45dcfd596d",
+    "updatedAt": "2024-12-30T12:34:39.397Z",
+    "devVersion": "67727e2f8fe7dd45dcfd596e",
+    "liveVersion": "67727e2f8fe7dd45dcfd596f"
+  },
+  "_version": "1.2",
+  "secrets": [],
+  "variableStates": []
+}
